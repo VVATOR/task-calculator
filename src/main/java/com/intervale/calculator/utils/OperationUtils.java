@@ -127,7 +127,7 @@ public final class OperationUtils {
 
 	public static void main(String[] args) {
 		// String expression = "5 + (2 * (3 ^ 2)) + (((((2 * 3))) * 5) / 10)";
-		String expression = "((5+4)+((2+4)*(1+1)))";
+		String expression = "((5+4)+((16/2)^(1+1)))";
 
 		expression = expression.replaceAll(" ", "");
 		LOG.info("expression: {}", expression);
@@ -135,7 +135,18 @@ public final class OperationUtils {
 
 		LOG.info("\n\n");
 		LOG.info("result = {}", calculate(expression));
-
+		
+		
+		try {
+			Thread.sleep(100000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		/*while(true) {
+			
+		}
+*/
 	}
 
 	public static double calculate(String expression){
