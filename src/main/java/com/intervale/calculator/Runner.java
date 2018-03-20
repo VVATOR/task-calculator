@@ -1,10 +1,8 @@
 package com.intervale.calculator;
 
-import com.intervale.calculator.engine.Expression;
-
 public class Runner {
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 
 		
 		System.out.println(Boolean.parseBoolean("false"));
